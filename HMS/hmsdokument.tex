@@ -1,0 +1,58 @@
+\documentclass{artikel1}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[norsk]{babel}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{amsmath}
+\usepackage{float}
+
+\title{HMS og risikoanalyse}
+\begin{document}
+\maketitle
+\section*{inneledning}
+Dette dokumentet er for deling med norske makerspaces og er produsert etter meetup på bitraf.
+Sikkerhet for brukere av maskiner er svært viktig. Her er noen tips til hvordan man kan opprette rutiner og gi kunnskap om risikoene ved bruk av maskiner.
+
+
+\section*{Risikoanalyse}
+Risikoanalyse er en tidkrevende og viktig del av sikkerhetsarbeidet. Det er vikitg å være nøye i dette arbeidet slik at resultatene av analysen er så riktig som mulig.
+Dette er vikitig siden en feil risikoanalyse kan i verste fall gjøre at man tar unødvendige/ikke tilstreklige tiltak.
+
+Den vanligste formen for risikoanalyse er å vurdere hver risiko for dens sannsynlighet (P) og vekte konsekvensen (K). Risikoen er da $risk(x)=P(x) * K(x)$
+Hvis man vekter x-verdiene fra 1-5 vi man få en risikomatrise:
+
+
+\begin{table}[H]
+\centering
+\caption{Risikomatrise}
+\label{Risikomatrise}
+\begin{tabular}{cl|ccccc}
+\cline{3-7}
+\multicolumn{1}{l}{\cellcolor[HTML]{000000}} & \multicolumn{1}{c|}{\cellcolor[HTML]{000000}} & \multicolumn{5}{c|}{P(x)}                                                                                                                                                                  \\ \cline{3-7}
+\multicolumn{1}{l}{\cellcolor[HTML]{000000}} & \cellcolor[HTML]{000000}                      & \multicolumn{1}{c|}{1}          & \multicolumn{1}{c|}{2}          & \multicolumn{1}{c|}{3}          & \multicolumn{1}{c|}{4}          & \multicolumn{1}{c|}{5}                             \\ \hline
+\multicolumn{1}{|c|}{}                       & 5                                             & \cellcolor[HTML]{FFC702}moderat & \cellcolor[HTML]{F8A102}        & \cellcolor[HTML]{FD6864}        & \cellcolor[HTML]{FE0000}HØY     & \cellcolor[HTML]{CB0000}{\color[HTML]{000000} HØY} \\ \cline{2-2}
+\multicolumn{1}{|c|}{}                       & 4                                             & \cellcolor[HTML]{F8FF00}moderat & \cellcolor[HTML]{FFC702}moderat & \cellcolor[HTML]{F8A102}        & \cellcolor[HTML]{FD6864}        & \cellcolor[HTML]{FE0000}HØY                        \\ \cline{2-2}
+\multicolumn{1}{|c|}{}                       & 3                                             & \cellcolor[HTML]{34FF34}lav     & \cellcolor[HTML]{F8FF00}moderat & \cellcolor[HTML]{FFC702}moderat & \cellcolor[HTML]{F8A102}        & \cellcolor[HTML]{FD6864}                           \\ \cline{2-2}
+\multicolumn{1}{|c|}{}                       & 2                                             & \cellcolor[HTML]{32CB00}LAV     & \cellcolor[HTML]{34FF34}lav     & \cellcolor[HTML]{F8FF00}moderat & \cellcolor[HTML]{FFC702}moderat & \cellcolor[HTML]{FFCC67}                           \\ \cline{2-2}
+\multicolumn{1}{|c|}{\multirow{-5}{*}{K(x)}} & 1                                             & \cellcolor[HTML]{32CB00}LAV     & \cellcolor[HTML]{32CB00}LAV     & \cellcolor[HTML]{34FF34}lav     & \cellcolor[HTML]{F8FF00}moderat & \cellcolor[HTML]{FFC702}moderat                    \\ \cline{1-2}
+\end{tabular}
+\end{table}
+
+
+I en risikoanalyse må man vite hva man ser etter og i hvilke perspektiv. Det er viktig å skille mellom risikoen for brukeren og maskinen. Grenseverdiene kan justeres etter behov/risiko.
+
+
+\section*{Dokumentasjon}
+Man kan aldri dokumentere for lite.
+
+Her skal dokumentasjon om opplæring av bruk, avfallshåndtering, bruksanvisninger, datablad og annen informasjon være tilgjengelig. Det bør også opprettes en plan for jevnlig ettersyn av utstyr.
+
+
+\section*{SOP}
+Et SOP-dokument er et kortfattet og informativt oppslag som skal være i nærheten av maskinen. Denne skal inneholde informasjon om maskina, personlig verneutstyr, resultat av risikoanalysen, krav ved normal drift og krav til brukeren.
+
+
+
+\end{document}
